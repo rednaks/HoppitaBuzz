@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
     <title>7opita Buzz Sound Effect Button</title>
     <style>
     .round-button {
-      width:25%;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width:85%;
+      height:85%;
     }
 
     .round-button-circle {
@@ -36,19 +41,48 @@
       text-align:center;
       color:#e2eaf3;
       font-family:Verdana;
-      font-size:1.2em;
+      font-size:4.2em;
       font-weight:bold;
       text-decoration:none;
     }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:80%;
+      max-height:60%;
+    }
+
+    h1 {
+      width: 80%;
+      height:65%;
+      display: block;
+      text-align: center;
+      direction: rtl;
+      margin-left:auto;
+      margin-right:auto;
+      
+    }
+
+    #maincontent {
+      max-width:800px;
+      margin: 0px auto;
+    }
+
     </style>
   </head>
   <body>
-    <div class="round-button" id="buzz_button">
-      <div class="round-button-circle">
-        <div class="button-text">Buzz !</div>
+    <div id="maincontent">
+      <img src="media/hoppita.jpeg"/>
+      <h1>إنزل عالفلسا وعمل Buzz !</h1>
+      <div class="round-button" id="buzz_button">
+        <div class="round-button-circle">
+          <div class="button-text">Buzz !</div>
+        </div>
       </div>
-    </div>
 
+    </div>
     <script language="javascript" type="text/javascript">
       var buzzSound = new Audio("media/buzz_sound.ogg");
       var buzzButton = document.getElementById('buzz_button');
